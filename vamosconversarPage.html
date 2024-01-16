@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Salas Vamosconversar</title>
+	<title>Página de mensagens do Vamosconversar</title>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -21,27 +21,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
-
 <body>
-    <div class="container">
-        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">LOGOUT</button>
-        <center>
-            <h1 class="title2"><b>VAMOSCONVERSAR</b></h1>
-            <h3 id="userName" class="subtitle3"></h3>
-        <div>
-            <h4 class="subtitle3">#Adicionar sala</h4>
-            <input type="text" class="form-control" id="roomName" placeholder="#Inserir nome da sala">
-        </div>
-        <br>
-            <button onclick="addRoom()" class="btn btn-success">#Adicionar sala</button>
-		    <h3 class="subtitle3">#SALAS TRENDING</h3>
-            <br>
-		    <div id="output"></div>
-        </center>
-    </div>
 
-<script src="vamosconversarRoom.js"></script>
+<div class="container">
+	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout();">Logout</button>
+	<center>
+		<h1 class="title2">	
+			VAMOSCONVERSAR
+		</h1>
+	<div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
+	</center>
+</div>
 
+<center>
+	<div class="inputDivMessagePage">
+		<label>Enviar:</label>
+		<input type="text" id="msg" class="form-control" placeholder="Mensagem">
+
+		<button class="btn btn-success" onclick="send()">Enviar</button> 
+	</div>
+</center>
+
+<script src="vamosconversarPage.js"></script>
 </body>
+</html>

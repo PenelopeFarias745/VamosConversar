@@ -24,6 +24,12 @@
     color:rgb(219, 219, 244);
 }
 
+.title2
+{
+    font-family: 'Quicksand', sans-serif;
+    color:rgb(219, 219, 244);
+}
+
 .subtitle
 {
     position: absolute;
@@ -38,6 +44,12 @@
     position: absolute;
     top: 230px;
     left: 205px;
+    font-family: 'Quicksand', sans-serif;
+    color:rgb(219, 219, 244);
+}
+
+.subtitle3
+{
     font-family: 'Quicksand', sans-serif;
     color:rgb(219, 219, 244);
 }
@@ -83,4 +95,10 @@ h3
 {
     color: white;
     font-size: 20px;
+}
+
+#output
+{
+    font-family: 'Quicksand', sans-serif;
+    color:rgb(219, 219, 244);
 }
